@@ -1,5 +1,5 @@
 pkgname=bitwarden-cli
-pkgver=1.16.0
+pkgver=1.18.1
 pkgrel=1
 pkgdesc='Natively packaged versions of the bitwarden cli'
 arch=(x86_64)
@@ -13,7 +13,7 @@ source=(
   "https://github.com/bitwarden/cli/releases/download/v$pkgver/bw-linux-$pkgver.zip"
 )
 
-sha512sums=('0566809bf302b6030f5a2190b6a2a13772dca052326e1b7f44ca1e801fa1b42538ca90f0f84aa289ac4507994d2ee8b20d621bb579d1f35561e7f28c11a5ade0')
+sha512sums=('14ca2c0347354fa9b4c2418d773e55e2e8bef61ccd2253a9dfc573438e036671c4c30f342025c0f9c6657b8b7fd1ff012d50257d02244b95fce1fd925d414b09')
 
 package() {
   install -Dm755 bw "$pkgdir/usr/bin/bw"
